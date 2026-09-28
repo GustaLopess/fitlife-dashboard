@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -20,6 +20,7 @@
     <nav>
         <a href="../index.html">FitLife</a>
         <ul>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="/pages/imc.html">IMC</a></li>
             <li><a href="/pages/tmb.html">TMB</a></li>
             <li><a href="/pages/water.html">WATER</a></li>
@@ -27,41 +28,56 @@
 
     </nav>
 
-    <section>
-        <form action="">
-    
-    
-            <label for="gender">Gênero</label>
-            <select name="gender" id="gender">
-    
-                <option value="female">Feminino</option>
-                <option value="male">Masculino</option>
-            </select>
-    
-            <label for="">Altura</label>
-            <input type="number" id="height" placeholder="Ex: 175">
-    
-            <label for="weight">Peso (kg)</label>
-            <input type="number" id="weight" placeholder="Ex: 70">
-    
-            <label for="age">Idade</label>
-            <input type="number" id="age" placeholder="21">
-    
-            <button>Calcular calorias</button>
-    
-        </form>
-    
-        <a href="../index.html">Voltar</a>
-    
-        <div>
-            <p>Gasto calórico basal:</p>
-            <p>0000</p>
-            <p>Kcal/dia</p>
-        </div>
-    
-    </section>
+    <main>
 
-    <h1>Calculadora TMB</h1>
+        <section>
+            <form action="">
+
+                <div class="select-div">
+
+                    <label for="gender">Gênero</label>
+                    <select name="gender" id="gender">
+                        <option value="female">Feminino</option>
+                        <option value="male">Masculino</option>
+                    </select>
+                </div>
+
+                <div class="altura>
+                <label for="">Altura</label>
+                <input type=" number" id="height" placeholder="Ex: 175">
+                </div>
+
+                <div class="peso">
+                    <label for="weight">Peso (kg)</label>
+                    <input type="number" id="weight" placeholder="Ex: 70">
+
+                </div>
+
+                <div class="idade">
+
+                    <label for="age">Idade</label>
+                    <input type="number" id="age" placeholder="21">
+
+                </div>
+
+                <button>Calcular calorias</button>
+
+            </form>
+
+            <a href="../index.html">Voltar</a>
+
+            <div>
+                <p>Gasto calórico basal:</p>
+                <p>0000</p>
+                <p>Kcal/dia</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fitlife</p>
+    </footer>
 
 </body>
 
