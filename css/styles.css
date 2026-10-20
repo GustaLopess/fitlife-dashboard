@@ -83,14 +83,22 @@ nav {
 }
 
 main {
-    width: 60vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
+
+    padding: 2rem 0;
 }
 
 .cards-section {
     display: flex;
     gap: 1.5rem;
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .card {
@@ -100,7 +108,7 @@ main {
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
-    width: 100%;
+    width: 15rem;
 
     transition: 0.4s;
 
@@ -117,4 +125,60 @@ main {
     font-size: 3rem;
     color: var(--primary-color);
     margin-bottom: 16px;
+}
+
+.tool-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    width: 100%;
+    padding: 2rem;
+
+    background-color: var(--card-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tool-container-title {
+    text-align: center;
+}
+
+.tool-container-title h2 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+}
+
+.tool-container form {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    
+}
+
+.form-group label {
+    font-weight: 600 var(--secondary-color);
+}
+
+.form-group input {
+    padding: 0.8rem;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-group input:focus{
+    outline: none;
+    border: var(--primary-color);
+    
 }
